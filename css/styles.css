@@ -79,10 +79,12 @@ section h2 {
 
 }
 
-/* */
+/* code for blockquote styling  */
 
 blockquote {
+
     font-style: italic;
+
     background-color: #f9f9f9;
     padding: 1rem;
 
@@ -95,3 +97,34 @@ blockquote {
 }
 
 /* */
+
+figure {
+
+    border: 0.3rem solid #aaa;
+    border-radius: 1rem;
+
+    padding: 1rem;
+    background-color: #f0f0;
+
+}
+
+/* figure image width has chosen*/
+figure img {
+    display: block;
+
+    width: 100%;
+
+    border: 0.3rem solid #aaa;
+    border-radius: 1rem;
+    margin: 0 auto;
+
+}
+
+figcaption {
+
+    font-variant: small-caps;
+    font-size: 0.8rem;
+
+    text-align: center;
+
+}
