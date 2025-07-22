@@ -1,0 +1,273 @@
+/*Deepthi Konatham- Student Number #9058409/
+Assignment 2 - Styling Kerala City page with CSS styles*/
+
+/*Root Element Setting 
+It sets the base font for the entire Document*/
+
+html {
+
+    font: italic small-caps bold 20px/1.5 Arial, sans-serif;
+    background-color: #f0f8ff;
+    /*Light background colour for the page and it makes easy readability*/
+
+}
+
+/*Body Styling*/
+/* content max width has chosen here*/
+
+body {
+    max-width: 1200px;
+    /*It makes max width of the body*/
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1rem solid #ccc;
+    background-color: #ffffff;
+
+
+}
+
+header {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    border-style: dashed dotted solid double;
+    /*border style shorthand*/
+    border-width: .25rem .5rem .75rem 1rem;
+    /*border width shorthand*/
+    border-color: red blue orange purple;
+}
+
+header,
+footer {
+
+    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+h1 {
+    color: blueviolet !important;
+    /*set color to blueviolet*/
+    font-size: 3rem;
+    /*unit in relation to the html font size 3*20px = 60px*/
+    margin: 1em;
+    /*unit in relation to current font element font size (60px)*/
+    padding: 1em;
+    text-align: center;
+    /*align text to center*/
+}
+
+main {
+    width: 65%;
+    /* border : .25rem solid black;*/
+    padding: 1rem;
+    margin: .5rem;
+    float: left;
+}
+
+aside {
+    width: 25%;
+    /*border : solid .25rem black;*/
+    margin-top: .5rem;
+    margin-bottom: .75rem;
+
+    margin-right: .25rem;
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+    padding-left: 1rem;
+    padding-right: .25rem;
+    float: right;
+}
+
+footer {
+    margin: .25rem .75rem .5rem;
+    padding: .25rem .75rem .5rem;
+    border-top-style: dotted;
+    border-bottom-style: dashed;
+    border-left-style: solid;
+    border-right-style: double;
+    border-top-width: .25rem;
+    border-bottom-width: .5rem;
+    border-left-width: .75rem;
+    border-right-width: 1rem;
+    border-top-color: red;
+    border-bottom-color: blue;
+    border-left-color: purple;
+    border-right-color: orange;
+    clear: both;
+}
+
+figure {
+    border: solid .25rem red;
+    border-radius: 1rem;
+    ;
+}
+
+img {
+    /*to center an image set the width smaller then containing element, make display block and margin to auto*/
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: .5rem;
+    border: solid .25rem red;
+    border-radius: 1rem;
+    ;
+}
+
+iframe {
+    width: 80%;
+}
+
+strong {
+    color: azure;
+    color: #011111;
+}
+
+/*id selector*/
+#cat {
+    color: coral;
+}
+
+/*class selector*/
+.main-para {
+    color: darkmagenta;
+    /*set color for elements in the class of main-para*/
+}
+
+/*class selector*/
+.main-para {
+    color: cornflowerblue;
+    /*set color for elements in the class of main-para*/
+}
+
+/*type/element selector all paragraphs*/
+p {
+    color: blue;
+    /*set color to blue*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*set font family*/
+}
+
+#div-para {
+    color: fuchsia;
+    margin: .25rem .5rem .75rem 1rem;
+    padding: .25rem .5rem .75rem 1rem;
+}
+
+blockquote {
+    color: cadetblue;
+    border: .1rem solid grey;
+    box-shadow: .5rem .5rem .5rem grey;
+    background-color: pink;
+
+}
+
+/*descendant selector*/
+section ul {
+    /*any ul element that is a descendant of a section*/
+    color: blue;
+}
+
+/*child selector*/
+section>ul {
+    /*selecting a ul child of the section element*/
+    color: darkgreen;
+}
+
+/*adjacent silbiling selector*/
+h2+q {
+    /*selects and q elements that are adjcent sibilings of the h2 */
+    font-weight: bold;
+}
+
+/*general sibiling selector*/
+ul~a {
+    /*selects any a element that is a general sibiling of a <ul>*/
+    font-variant: small-caps;
+}
+
+/*multiple selector*/
+h2,
+h3,
+figcaption,
+.form-label,
+#christmas,
+p>abbr {
+    /*selects many elements by any type of selector separted by a comma*/
+    font-variant: small-caps;
+}
+
+/*pseudo-element selector*/
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: blue;
+    font-size: xx-large;
+}
+
+h1::before {
+    content: url(https://www.w3schools.com/css/smiley.gif);
+}
+
+/*pseudo-class selector*/
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    text-decoration: none;
+    /*removes underline*/
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*attribute selector*/
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 100%;
+}
+
+/*pseudo-class selector*/
+input[type=text]:focus {
+    width: 50%;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ol>li {
+    list-style: url(https://www.w3schools.com/css/smiley.gif);
+
+}
+
+@media (max-width:900px) {
+    html {
+        font-size: 15px;
+    }
+
+    main,
+    aside {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+}
