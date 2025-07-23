@@ -238,6 +238,36 @@ tr:hover {
     margin-bottom: 1rem;
 }
 
+/* ===== Form Styling ===== */
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*  Gallery and Video Side-by-Side Layout */
+.media-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#gallery,
+#video {
+    flex: 1 1 48%;
+}
+
+
+#gallery img,
+#video iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
 
 /*Responsive design */
 
