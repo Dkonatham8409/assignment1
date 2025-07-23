@@ -135,9 +135,12 @@ figcaption {
 iframe {
     display: block;
     border: 0.3rem solid #555;
-    width: 75%;
+    width: 55%;
+    height: auto;
 
     margin: 2rem auto;
+    border: 0.3rem solid #555;
+    border-radius: 0.5rem;
 
 }
 
