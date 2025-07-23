@@ -135,7 +135,7 @@ figcaption {
 iframe {
     display: block;
     border: 0.3rem solid #555;
-    width: 100%;
+    width: 90%;
 
     margin: 2rem auto;
 
@@ -225,7 +225,7 @@ tr:hover {
     font-variant: small-caps;
     font-weight: bold;
 
-    color: #333;
+    color: #444;
     display: block;
     margin-top: 1rem;
 
