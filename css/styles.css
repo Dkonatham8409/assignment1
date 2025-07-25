@@ -15,7 +15,6 @@ html {
 /*Body Styling*/
 /* content max width has chosen here*/
 
-
 body {
     max-width: 1200px;
     /*It makes max width of the body*/
@@ -24,8 +23,8 @@ body {
     border: 1rem solid #ccc;
     background-color: #ffffff;
 
-
 }
+
 
 /*page layout using floats*/
 
@@ -233,16 +232,6 @@ tr:hover {
     width: 100%;
     padding: 0.5rem;
     border: 0.2rem solid #ccc;
-
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-/* ===== Form Styling ===== */
-.form-control {
-    width: 100%;
-    padding: 0.5rem;
-    border: 0.2rem solid #ccc;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -269,23 +258,32 @@ tr:hover {
     border-radius: 1rem;
 }
 
-/*Responsive design */
+/*Responsive design for screen smaller than 768px */
 
 @media screen and (max-width: 768px) {
+    /*Decrease base font size for better readability*/
 
     html {
         font-size: 16px;
+        /*Adjust the root font size*/
     }
+
+    /* Removes float layout*/
 
     main,
     aside {
         float: none;
         width: 100%;
         padding: 1rem 0;
+        /* Adjusts padding for spacing */
     }
+
+    /*Make iframe video responsive*/
 
     iframe {
         width: 100%;
+        /*full width*/
         height: auto;
+        /* Keeps the ratio of the video*/
     }
 }
