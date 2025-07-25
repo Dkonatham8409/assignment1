@@ -269,6 +269,7 @@ tr:hover {
     height: auto;
     display: block;
     border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 /*Responsive design for screen smaller than 768px */
